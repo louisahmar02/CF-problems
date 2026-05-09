@@ -6,6 +6,7 @@ int main(){
         int i = 0;
         string first{}, second{};
         cin >> first >> second;
+// Converting both strings to lower case;
         for(int x = 0; x < first.length(); x++){
             if(first[x] >= 'A' && first[x] <= 'Z'){
                 first[x] += 32;
@@ -15,6 +16,7 @@ int main(){
 
             }
         }
+// extracting th point of disjunction
         for(i = 0; i < first.length(); i++){
             if(first[i] != second[i]){
                 break;
