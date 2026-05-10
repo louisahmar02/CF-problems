@@ -1,1 +1,16 @@
-
+#include<iostream>
+using namespace std;
+int main(){
+     int k{0}, n{0}, w{0}, total{0};
+     cin >> k >> n >> w;
+     //copy = n;
+     for(int i = 1; i <= w; i++){
+          total += i*k;
+     }
+     if(n > total){
+          cout << 0;
+          return 0;
+     }
+     total -= n;
+     cout << total;
+}
