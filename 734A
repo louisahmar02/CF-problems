@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+     string s;
+     int n{0}, A{0}, D{0};
+     cin >> n;
+     cin >> s;
+     for(int i = 0; i < n; i++){
+        if(s[i] == 'A'){
+             A++;
+        }
+        else{
+             D++;
+        }
+     }
+     if(A > D){
+          cout << "Anton";
+     }
+     else if(D > A) {
+          cout << "Danik";
+     }
+     else{
+          cout << "Friendship";
+     }
+}
