@@ -1,1 +1,35 @@
 //96 A football 
+#include<iostream>
+using namespace std;
+int main(){
+        int c0{0}, c1{0};
+        string s;
+        cin >> s;
+        if(s.length() < 7){
+            cout << "NO";
+            return 0;
+        }
+        for(int i = 0; i < s.length(); i++){
+            if(s[i] == '1'){
+                c1++;
+                c0 = 0;
+            }
+            else{
+                c0++;
+                c1 = 0;
+            }
+            if(c0>=7 || c1>=7){
+            cout << "YES";
+            return 0;
+        }
+       
+        }
+        cout << c1 << " " << c0 << endl;
+        if(c0>=7 || c1>=7){
+            cout << "YES";
+        }
+        else{
+            cout << "NO";
+        }
+    return 0;
+}
