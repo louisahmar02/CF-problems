@@ -24,7 +24,7 @@ int main(){
         }
        
         }
-        cout << c1 << " " << c0 << endl;
+       // cout << c1 << " " << c0 << endl;
         if(c0>=7 || c1>=7){
             cout << "YES";
         }
