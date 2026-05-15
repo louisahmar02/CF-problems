@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+     int n{}, capacity{}, current{};
+     cin >> n;
+     for(int i = 0; i < n; i++){
+          int plus{}, negative{};
+          cin >> negative >> plus;
+          current = current+(plus - negative);
+          if(capacity < current)
+          capacity = current;
+     }
+     cout << capacity;
+}
