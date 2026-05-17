@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main(){
+     string s{}, x = "hello" ;
+     cin >> s;
+     if(s.length() < 5){
+         cout << "NO";
+         return 0;
+     }
+     int count{}, tc{};
+     for(int i = 0; i < s.length(); i++){
+         if(s[i]==x[tc]){
+             count++;
+             tc++;
+         }
+     }
+     if(count == 5){
+         cout << "YES";
+     }
+     else{
+         cout << "NO";
+     }
+     return 0;
+}
