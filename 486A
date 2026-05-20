@@ -1,4 +1,4 @@
-// codeforces problem
+// codeforces problem.
 #include<iostream>
 using namespace std;
 int main(){
