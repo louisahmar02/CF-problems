@@ -1,3 +1,5 @@
+//Codeforces problem
+//A. Magnets
 #include<iostream>
 using namespace std;
 int main(){
